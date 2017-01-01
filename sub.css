@@ -1,0 +1,42 @@
+.card{
+width: 350px;
+border: 1px solid gray;
+box-shadow: 1px 1px 3px #888;
+border-top: 10px solid green;
+min-height: 250px;
+padding-: 10px;
+margin: 10px;
+}
+html {
+  background:url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwik-pup-J7RAhWh44MKHf9IC4wQjRwIBQ&url=http%3A%2F%2Fwww.business2community.com%2Fmarketing%2F7-ways-ecommerce-will-change-next-12-months-01220517&psig=AFQjCNHvEIyKd08NXZIRShVV8kyy7u_CvQ&ust=1483291165424010') no-repeat center center fixed;
+}
+
+body {
+  background:rgba(255,255,255,0.5); /* applies a 50% transparent white background */
+}
+img{
+  
+  width: 300px;
+  margin: 10px;
+}
+
+h1{
+  font-weight: lighter;
+  margin-left: 100px;
+  margin-top: -70px;
+}
+
+p{
+  margin: 10px;
+  font-family: segoe ui;
+  line-height: 1.4em;
+  font-size: 1.2em;
+}
+
+#mainbox{
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+flex-wrap: wrap;
+}
