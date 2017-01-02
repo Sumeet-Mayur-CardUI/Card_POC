@@ -5,8 +5,15 @@
 </head>
 <body>
 
-<div class="container">
-	<div class="card">
+<div class="navbar">
+	<ul>
+		<li class="searchright"><span><input type="search" name="search" onkeypress="handle(event)" placeholder="Search.." id="searchbar"></span></li>
+		<!--li><a href="#home" class="home">Home</a></li>
+		<li><a href="#signin" class="active">Sign in</a></li-->
+	</ul>
+</div>
+<div id="container">
+	<div class="card card1">
 		<div class="inout">
 			<img src="connector1.jpg" alt="ConnectorImage" class="image">
 			<div class="overlay">
@@ -20,10 +27,106 @@
 			</div>	
 		</div>
 		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
-		<div class="item">Connector Cable, $50</div>
+		<div class="item">
+			<span class="ids">Connector1</span>
+			<span>, $25</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+	</div>
+	<div class="card card2">
+		<div class="inout">
+			<img src="connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p>Model#  CPGI-CCS-18-10-S-12</p>
+				<a href="#" style="text-decoration:none;">Not Yet Rated</a>
+				<br><br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+			</div>	
+		</div>
+		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
+		<div class="item">
+			<span class="ids">Connector</span>
+			<span>, $50</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+	</div>
+	<div class="card card3">
+		<div class="inout">
+			<img src="connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p>Model#  CPGI-CCS-18-10-S-12</p>
+				<a href="#" style="text-decoration:none;">Not Yet Rated</a>
+				<br><br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+			</div>	
+		</div>
+		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
+		<div class="item">
+			<span class="ids">Connector</span>
+			<span>, $10</span>
+		</div>
 		<button class="button button1">Add To Cart</button>
 	</div>
 </div>
+  
+  
+ <script>
+	function handle(e){
+		if(e.keyCode==13)
+		{
+			e.preventDefault();
+			var input_text;
+			input_text=document.getElementById("searchbar"); 
+			if(input_text.value == "")
+			{
+				input_text.value = "";
+			}
+			else{
+				var  filter,no_of_cards,container_element,card_element,value_card,i,count;
+				count=0;
+				input_text=document.getElementById("searchbar");
+				filter=input_text.value.toUpperCase();
+				no_of_cards=document.querySelectorAll('#container .card').length;
+				container_element=document.getElementById("container");
+				card_element=container_element.getElementsByClassName("card");
+				
+				for(i=0;i<no_of_cards;i++)
+					{
+						if(card_element[i].style.display=="none"){
+							card_element[i].style.display="inline-block";
+						}
+					}
+				
+				for(i=0;i<no_of_cards;i++)
+				{
+					value_card=card_element[i].getElementsByClassName("ids")[0];
+					if(value_card.innerHTML.toUpperCase().localeCompare(filter) != 0)
+					{
+						
+						card_element[i].style.display="none";
+						count = count + 1;
+					}
+				}	
+
+				if(count == i)
+				{
+					alert("No Items found");
+					for(i=0;i<no_of_cards;i++)
+					{
+						card_element[i].style.display="inline-block";
+					}
+				}
+			}
+		}
+	}
+ </script>
+  
   
 </body>
 </html>
