@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="trail.css" type="text/css">
+</head>
+<body>
+ <script>
+	function handle(e){
+		if(e.keyCode==13)
+		{
+			e.preventDefault();
+			var input_text;
+			input_text=document.getElementById("searchbar"); 
+			if(input_text.value == "")
+			{
+				input_text.value = "";
+			}
+			else{
+				var  filter,no_of_cards,container_element,card_element,value_card,i,count;
+				count=0;
+				input_text=document.getElementById("searchbar");
+				filter=input_text.value.toUpperCase();
+				 
+				
+				card_element=document.getElementsByClassName("container");
+				no_of_cards=card_element.length;
+				 
+				for(i=0;i<no_of_cards;i++)
+					{
+						if(card_element[i].style.display=="none"){
+							card_element[i].style.display="inline-block";
+						}
+					}
+				
+				for(i=0;i<no_of_cards;i++)
+				{		
+				
+					value_card=card_element[i].getElementsByClassName("ids")[0];
+					 
+					if(value_card.innerHTML.toUpperCase().localeCompare(filter) != 0)
+					{
+						
+						card_element[i].style.display="none";
+						count = count + 1;
+					}
+				}	
+
+				if(count == i)
+				{
+					alert("No Items found");
+					for(i=0;i<no_of_cards;i++)
+					{
+						card_element[i].style.display="inline-block";
+					}
+				}
+			}
+		}
+	}
+ </script>
+
+
+<div >
+	<ul style="list-style-type:none">
+		<li class="searchright"><span><input type="search" name="search" onkeypress="handle(event)" placeholder="Search.." id="searchbar"></span></li>
+		 
+		<!--li><a href="#home" class="home">Home</a></li>
+		<li><a href="#signin" class="active">Sign in</a></li-->
+	</ul>
+		
+<p id="demo"></p>
+</div>
+
+<ul style="list-style-type:none">
+ <li >
+ <div class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors2</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card card3">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors3</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card card4">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors4</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors5</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors6</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors7</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors8</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors9</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors10</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors11</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+ <li class="container">
+ <div class="compare">
+ <form action="">
+<input type="checkbox"> <span class="note">Compare</span>
+</form>
+</div>
+
+<div class="card">
+
+<img src="C:\Users\agnan\Desktop\connector1.jpg" alt="ConnectorImage" class="image">
+<div class="after">
+<div class="r">
+<a href="default.asp">
+<i class="material-icons"   style="font-size:48px">3d_rotation</i>
+</a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">share</i>
+ </a>
+ <a href="default.asp">
+<i class="material-icons" style="font-size:48px">file_download</i>
+</a>
+</div>
+</div>
+</div>
+  <a href="#">
+ <div class="title"><u><span class="ids">connectors12</span></u></div>
+ </a>
+ <div class="shortdesc">Electric connectors 20v cables </div>
+ <span>Model#  HDX27GONLINE(5)</span><br>
+ <span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+	&#10004; Pick it up today
+	</span><br>
+	<span style="text-align: center"><h3>8.36 &#36;<h3></span>
+ <button class="button" >Add to Cart</button>
+ 
+<br>
+</div>
+</li>
+</ul>
+<ul class="pagination">
+  <li><a href="#">«</a></li>
+  <li><a class="active" href="#">1</a></li>
+  <li><a  href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="#">7</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+ 
+</body>
+</html>
