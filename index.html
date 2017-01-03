@@ -11,7 +11,7 @@
 	<ul>
 		<li><a href="#" id="signup">Sign up</a></li>
 		<li><a href="#" id="signin">Sign in</a></li>
-		<li class="searchright"><span><input type="search" name="search" onkeypress="handle(event)" placeholder="Search.." id="searchbar"></span></li>
+		<li class="searchright"><span><input type="search" name="search" onkeypress="dynamicsearch(event)" onkeyup="dynamicsearch(event)" placeholder="Search.." id="searchbar"></span></li>
 		<li><a href="#" id="home">ConnectorLines</a></li>
 		<li><a href="#" id="services">Home Services</a></li>
 		<li><a href="#" id="offers">Special Offers</a></li>
@@ -355,7 +355,7 @@
 		<br>
 		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
 		<div class="item">
-			<span class="ids">Connector2</span>
+			<span class="ids">Con13</span>
 			<span>, $25</span>
 		</div>
 		<button class="button button1">Add To Cart</button>
@@ -393,7 +393,7 @@
 		<br>
 		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
 		<div class="item">
-			<span class="ids">Connector1</span>
+			<span class="ids">Con12</span>
 			<span>, $45</span>
 		</div>
 		<button class="button button1">Add To Cart</button>
@@ -431,7 +431,7 @@
 		<br>
 		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
 		<div class="item">
-			<span class="ids">Connector1</span>
+			<span class="ids">Con1</span>
 			<span>, $275</span>
 		</div>
 		<button class="button button1">Add To Cart</button>
@@ -469,7 +469,7 @@
 		<br>
 		<!--img onmouseover="this.style.visibility = 'hidden';" onmouseout="this.style.visibility = 'visible';" src="connector1.jpg" -->
 		<div class="item">
-			<span class="ids">Connector12</span>
+			<span class="ids">A Connector12</span>
 			<span>, $25</span>
 		</div>
 		<button class="button button1">Add To Cart</button>
@@ -480,50 +480,23 @@
   
   
  <script>
-	function handle(e){
-		if(e.keyCode==13)
-		{
-			e.preventDefault();
-			var input_text;
-			input_text=document.getElementById("searchbar"); 
-			if(input_text.value == "")
+ 	function dynamicsearch(e){
+		var  filter,no_of_cards,container_element,card_element,value_card,i,position_at,filter_char,filter_str;
+		input_text=document.getElementById("searchbar");
+		no_of_cards=document.querySelectorAll('#container .card').length;
+		container_element=document.getElementById("container");
+		card_element=container_element.getElementsByClassName("card");
+		filter=input_text.value.toUpperCase();
+		
+		for(i=0;i<no_of_cards;i++){
+			value_card=card_element[i].getElementsByClassName("ids")[0].innerHTML.toUpperCase();
+			if(!value_card.includes(filter))
 			{
-				location.reload();
+				card_element[i].style.display="none";
 			}
 			else{
-				var  filter,no_of_cards,container_element,card_element,value_card,i,count;
-				count=0;
-				input_text=document.getElementById("searchbar");
-				filter=input_text.value.toUpperCase();
-				no_of_cards=document.querySelectorAll('#container .card').length;
-				container_element=document.getElementById("container");
-				card_element=container_element.getElementsByClassName("card");
-				
-				for(i=0;i<no_of_cards;i++)
-					{
-						if(card_element[i].style.display=="none"){
-							card_element[i].style.display="inline-block";
-						}
-					}
-				
-				for(i=0;i<no_of_cards;i++)
-				{
-					value_card=card_element[i].getElementsByClassName("ids")[0];
-					if(value_card.innerHTML.toUpperCase().localeCompare(filter) != 0)
-					{
-						
-						card_element[i].style.display="none";
-						count = count + 1;
-					}
-				}	
-
-				if(count == i)
-				{
-					alert("No Items found");
-					for(i=0;i<no_of_cards;i++)
-					{
-						card_element[i].style.display="inline-block";
-					}
+				if(card_element[i].style.display == "none"){
+					card_element[i].style.display="inline-block";
 				}
 			}
 		}
