@@ -4,19 +4,33 @@
 	<link rel="stylesheet" href="index.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="navbar">
-	<ul>
-		<li><a href="#" id="signup">Sign up</a></li>
-		<li><a href="#" id="signin">Sign in</a></li>
-		<li class="searchright"><span><input type="search" name="search" onkeypress="dynamicsearch(event)" onkeyup="dynamicsearch(event)" placeholder="Search.." id="searchbar"></span></li>
-		<li><a href="#" id="home">ConnectorLines</a></li>
-		<li><a href="#" id="services">Home Services</a></li>
-		<li><a href="#" id="offers">Special Offers</a></li>
-	</ul>
-</div>
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand home" href="#">ConnectorLines</a>
+    </div>
+    <ul class="nav navbar-nav navbarlist">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Special Offers</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control searchselection" placeholder="Search" onkeypress="dynamicsearch(event)" onkeyup="dynamicsearch(event)" id="searchbar">
+      </div>
+    </form>
+	<ul class="nav navbar-nav navbar-right navbarlist" >
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
 <div id="container">
 	<div class="card card1">
 		<div class="compare">
@@ -474,13 +488,25 @@
 		</div>
 		<button class="button button1">Add To Cart</button>
 	</div>
-	<br><br><br>
-	<footer>Copyright &copy; ConnectorLines.com</footer>
+	<br><br>
 </div>
-  
+
+<div class="container text-center">
+	  <ul class="pagination page">
+		<li><a href="#"><<</a></li>
+		<li><a href="#">1</a></li>
+		<li class="active"><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">>></a></li>
+	  </ul>
+</div>
+
+<footer>Copyright &copy; ConnectorLines.com</footer>
   
  <script>
- 	function dynamicsearch(e){
+	function dynamicsearch(e){
 		var  filter,no_of_cards,container_element,card_element,value_card,i,position_at,filter_char,filter_str;
 		input_text=document.getElementById("searchbar");
 		no_of_cards=document.querySelectorAll('#container .card').length;
