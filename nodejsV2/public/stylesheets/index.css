@@ -7,12 +7,15 @@ body {
 		background-color: #F8F8FF;
 		min-height: 100%; 
 		display: flex;
+		/*position: relative;*/
 		flex-direction: column;
 }
 
 #container{
 	flex: 1;
+	position:relative;
 }
+
 
 .card{
 	background-color : white;
@@ -20,7 +23,7 @@ body {
 	transition: .5s ease;
     position: relative;	
 	width: 15%;
-	height: 320px;
+	height: auto;
 	border-radius : 5px;
 	display: inline-block;
 	margin-top: 1%;
@@ -29,22 +32,46 @@ body {
 	border: 1px solid green;
 }
 
+.compare	{
+	left: 10px;
+	height: 30px;
+	position: relative;
+	font-family: Seoge UI;
+
+}
+
 .image {
+  position:relative;
   display: block;
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
   opacity: 1;
 }
+.inout{
+	position:relative;
+}
 
 .inout:hover .image{
   opacity: 0;
 }
+.inout:hover  ~ .item{
+	visibility: hidden;
+}
+
+.inout:hover  ~ .button1{
+	visibility: hidden;
+}
+ 
+.inout:hover  ~ .cardfooter-actionicons{
+	visibility: hidden;
+}
 
 .overlay {
   position: absolute;
+  text-align:center;
   bottom: 100%;
-  left: 5px;
+  left: 0;
   right: 0;
   background-color: white;
   overflow: hidden;
@@ -52,12 +79,14 @@ body {
   height:0;
   transition: .5s fast;
   border-radius : 5px;
+  
 }
 
 .inout:hover .overlay {
   bottom: 0;
-  height: 90%;
+  height: 100%;
   width: 95%;
+  /*z-index:1;*/
 }
 
 .item {
@@ -84,6 +113,16 @@ body {
 	Border-radius: 5px;
 }
 
+.cardfooter-actionicons{
+	display: inline-block;
+	position:relative;
+	left : 16%;
+}
+#reviews{
+	position: relative;
+	bottom:7px;
+}
+
 .navbar-custom {
     background-color: #606060;
 	border-color: #E7E7E7;}
@@ -104,7 +143,7 @@ body {
 	font-family: "Lucida Handwriting";
 }
 
-li a{
+.navbar-custom li a{
 	position: relative;
     display: inline-block;
     color: white;
@@ -115,6 +154,12 @@ li a{
 	margin-left: 30px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+#searchbar{
+	 position: absolute;
+    top: 50%;
+    margin-top: -17px;
 }
 
 #services:hover, #offers:hover, #signin:hover{
@@ -152,13 +197,7 @@ li a{
 	margin-left: 100px;
 }
 
-.compare	{
-	left: 2px;
-	height: 30px;
-	position: relative;
-	font-family: Seoge UI;
 
-}
 
 .pagination li {
   display: inline;

@@ -1,0 +1,1 @@
+https://npm-card-poc.herokuapp.com/ | https://git.heroku.com/npm-card-poc.git

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Hello World</title>
+	<link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <script type="text/babel">
+
+    var Bacon = React.createClass({
+        edit: function(){
+
+          alert("Edit Called");
+        },
+
+
+
+
+        render: function(){
+
+          return(
+              <div >
+
+
+                <div className="card ">
+                <div className="inout">
+                <div><img src={this.props.image} alt="boohoo" className="image"/></div>
+                <div className="overlay">
+                <p><strong>{this.props.cname}</strong></p>
+				<p>{this.props.details}</p>
+				<p><strong>Model #</strong></p>
+				<p>{this.props.mno}</p>
+
+      <span className="pickup">&#10004; Pick it up today</span>
+      <br/><br/>
+        </div>
+        </div><br/>
+        <div className="item">
+			<span className="ids">{this.props.title}</span>
+			<span>, {this.props.price}</span>
+		</div>
+      <button onClick = {this.edit} className="button button1">AddtoCart</button>
+      <div className="cardfooter-actionicons">
+
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons" >3d_rotation </i>
+			</a>
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons">share</i>
+			</a>
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons">file_download</i>
+			</a>
+			<a href="review.asp" className="reviews">Reviews</a>
+		</div>
+        </div>
+        </div>
+
+        );
+        }
+
+
+    });
+
+
+
+      ReactDOM.render(<div className="container" ><Bacon
+      title = "connector1"
+      price = "$25"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector2"
+      price = "$12"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+	  image = "images/connector1.jpg"
+      /><Bacon
+      title = "connector3"
+      price = "$23"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+	  image = "images/connector1.jpg"
+
+
+      /><Bacon
+      title = "connector4"
+      price = "$233"
+      cname= "Taco Electronics"
+      details = "13-10 AWG, Plastic Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector5"
+      price = "$231"
+      cname= "Taco Electronics"
+      details = "13-10 AWG, Plastic Crimp Joins (10-Pack)"
+      mno = "CPGI-CCS-18-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      /><Bacon
+      title = "connector60"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+	  image = "images/connector1.jpg"
+
+      />
+	  
+	  
+	  
+	  
+	  </div>,document.getElementById('root'));
+
+
+      var Bacon2 = React.createClass({
+
+          render: function(){
+
+            return(
+<div>
+    <div className="container text-center">
+    <ul className="pagination page">
+      <li className="active"><a href="default.asp">1</a></li>
+      <li><a href="default.asp">2</a></li>
+      <li><a href="default.asp">3</a></li>
+      <li><a href="default.asp">4</a></li>
+      <li><a href="default.asp">5</a></li>
+      <li><a href="default.asp">6</a></li>
+    </ul>
+
+</div>
+<footer>Copyright &copy; ConnectorLines.com</footer>
+  </div>
+
+
+          );
+          }
+
+
+      });
+
+      ReactDOM.render(<Bacon2 />,document.getElementById('root2'));
+
+
+      var Bacon3 = React.createClass({
+
+          render: function(){
+
+            return(
+                <div >
+  <nav className="navbar navbar-custom">
+ 	<div className="container-fluid">
+ 		<div className="navbar-header">
+ 			<a className="navbar-brand home" href="#">ConnectorLines</a>
+ 		</div>
+ 		<ul className="nav navbar-nav navbarlist">
+ 			<li className="active"><a href="#">Home</a></li>
+ 			<li><a href="#">Services</a></li>
+ 			<li><a href="#">Special Offers</a></li>
+ 		</ul>
+ 		<ul className="nav navbar-nav navbar-right navbarlist" >
+ 			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+ 			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+ 		</ul>
+ 	</div>
+ </nav>
+            </div>
+          );
+          }
+
+
+      });
+
+        ReactDOM.render(<div><Bacon3/></div>,document.getElementById('nav'));
+
+		var Board = React.createClass
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+https://git.heroku.com/quiet-lake-75506.git
+https://git.heroku.com/npmcardui.git
+https://npmcardui.herokuapp.com/
+https://git.heroku.com/npm-card-ui.git
+https://npm-card-ui.herokuapp.com/
