@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-custom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand home" href="#">ConnectorLines</a>
+		</div>
+		<ul class="nav navbar-nav navbarlist">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Special Offers</a></li>
+		</ul>
+		<form class="navbar-form navbar-left form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control searchselection" placeholder="Search" onkeypress="dynamicsearch(event)" onkeyup="dynamicsearch(event)" id="searchbar">
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right navbarlist" >
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div id="container">
+	<div class="card card1">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector1</span>
+			<span>, $25</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card2">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector2</span>
+			<span>, $25</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card3">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector3</span>
+			<span>, $5</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card4">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">NetGear Connector</span>
+			<span>, $10</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card5">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Dlink Connector</span>
+			<span>, $30</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card6">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">ABC Connector</span>
+			<span>, $50</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card7">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector7</span>
+			<span>, $5</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card8">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector8</span>
+			<span>, $500</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card9">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector8</span>
+			<span>, $500</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card10">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector8</span>
+			<span>, $500</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card11">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector11</span>
+			<span>, $500</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+	
+	<div class="card card12">
+		<div class="compare">
+			<input type="checkbox"> <span class="note">Compare</span>
+		</div>
+		<div class="inout">
+			<img src="images/connector1.jpg" alt="ConnectorImage" class="image">
+			<div class="overlay">
+				<p><strong>Tyco Electronics</strong></p>
+				<p> 18-10 AWG, Steel Crimp Sleeves (10-Pack)</p>
+				<p><strong>Model #</strong></p>
+				<p>  CPGI-CCS-18-10-S-12</p>
+				<br>
+				<span  style="font-family: arial, Segoe UI Symbol;background:white;color:green;">
+					&#10004; Pick it up today
+				</span>
+				<br><br>
+			</div>	
+		</div>
+		<br>
+		<div class="item">
+			<span class="ids">Connector12</span>
+			<span>, $300</span>
+		</div>
+		<button class="button button1">Add To Cart</button>
+		<div class="cardfooter-actionicons">
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons"   style="font-size:20px; color:gray;width:30px;">3d_rotation</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">share</i>
+			</a>
+			<a href="default.asp" style="text-decoration:none;">
+				<i class="material-icons micons" style="font-size:20px; color:gray;width:30px;">file_download</i>
+			</a>
+			<a href="review.asp" id="reviews" style="text-decoration:none;">Reviews</a>
+		</div>
+	</div>
+</div>
+
+<div class="container text-center">
+	  <ul class="pagination page">
+		<li><a href="#"><<</a></li>
+		<li><a href="#">1</a></li>
+		<li class="active"><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">>></a></li>
+	  </ul>
+</div>
+
+<footer>Copyright &copy; ConnectorLines.com</footer>
+  
+ 
+  
+  
+</body>
+</html>

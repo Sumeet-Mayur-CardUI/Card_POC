@@ -1,0 +1,8 @@
+{
+  "name" : "connectorline",
+  "version" : "0.0.1",
+  "description" : "Basic card ui",
+  "dependencies" : {
+    "mime" : "~1.2.7"
+  }
+}
