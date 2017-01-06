@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Hello World</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+    var Bacon = React.createClass({
+        edit: function(){
+
+          alert("Edit Called");
+        },
+
+
+
+
+        render: function(){
+
+          return(
+              <div >
+
+
+                <div className="card ">
+                <div className="inout">
+                <div><img src={'connector1.jpg'} alt="boohoo" className="image"/></div>
+                <div className="overlay">
+                <p><strong>{this.props.cname}</strong></p>
+				<p>{this.props.details}</p>
+				<p><strong>Model #</strong></p>
+				<p>{this.props.mno}</p>
+
+      <span className="pickup">&#10004; Pick it up today</span>
+      <br/><br/>
+        </div>
+        </div><br/>
+        <div className="item">
+			<span className="ids">{this.props.title}</span>
+			<span>, {this.props.price}</span>
+		</div>
+      <button onClick = {this.edit} className="button button1">AddtoCart</button>
+      <div className="cardfooter-actionicons">
+
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons" >3d_rotation </i>
+			</a>
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons">share</i>
+			</a>
+			<a href="default.asp" className="icons">
+				<i className="material-icons micons">file_download</i>
+			</a>
+			<a href="review.asp" className="reviews">Reviews</a>
+		</div>
+        </div>
+        </div>
+
+        );
+        }
+
+
+    });
+
+      ReactDOM.render(<div className="container" ><Bacon
+      title = "connector1"
+      price = "$25"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+
+      /><Bacon
+      title = "connector2"
+      price = "$12"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+      /><Bacon
+      title = "connector3"
+      price = "$23"
+      cname= "Tyco Electronics"
+      details = "18-10 AWG, Steel Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-10-S-12"
+
+
+      /><Bacon
+      title = "connector4"
+      price = "$233"
+      cname= "Taco Electronics"
+      details = "13-10 AWG, Plastic Crimp Sleeves (10-Pack)"
+      mno = "CPGI-CCS-18-12-S-12"
+
+      /><Bacon
+      title = "connector5"
+      price = "$231"
+      cname= "Taco Electronics"
+      details = "13-10 AWG, Plastic Crimp Joins (10-Pack)"
+      mno = "CPGI-CCS-18-12-S-12"
+
+      /><Bacon
+      title = "connector6"
+      price = "$50"
+      cname= "Taco Electronics"
+      details = "11-10 AWG, sheet Crimp Sleeves (100-Pack)"
+      mno = "CPI-CS-8-12-S-12"
+
+      /></div>,document.getElementById('root'));
+
+    </script>
+  </body>
+</html>
